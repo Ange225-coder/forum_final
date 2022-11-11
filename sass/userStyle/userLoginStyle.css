@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  margin: 0 0 0 0;
+  font-family: "Arial", "sans-serif";
+}
+
+.forms, .description {
+  width: 50%;
+}
+
+.forms header img {
+  width: 120px;
+  height: 120px;
+  margin-left: 7%;
+}
+.forms h1 {
+  text-align: center;
+  font-size: 2.8em;
+}
+.forms .form-logo_flex {
+  display: flex;
+  width: 500px;
+  margin: auto;
+  justify-content: space-between;
+}
+.forms .form-logo_flex img {
+  width: 20px;
+  height: 20px;
+}
+.forms .form-logo_flex a {
+  padding: 12px 70px 6px 70px;
+  border-radius: 5px;
+}
+.forms .form-logo_flex a:hover {
+  background-color: rgba(128, 128, 128, 0.27);
+}
+.forms .form-logo_flex--link_color_grey {
+  border: 1px solid grey;
+}
+.forms .form-logo_flex--link_color_black {
+  border: 1px solid black;
+}
+.forms .form-logo_flex--link_color_blue {
+  border: 1px solid #8484ff;
+}
+.forms--pCenter {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.forms form {
+  width: 700px;
+  margin: auto;
+}
+.forms form h3 {
+  text-align: center;
+  font-weight: 500;
+}
+.forms form .form--middle {
+  width: 450px;
+  margin: auto;
+}
+.forms form input {
+  width: 450px;
+  height: 43px;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  border-bottom: 2px solid grey;
+  background-color: rgba(93, 24, 227, 0.05);
+}
+.forms form input::placeholder {
+  padding-left: 2%;
+  font-size: 1.2em;
+}
+.forms form input:first-child {
+  margin-bottom: 5%;
+}
+.forms form input:focus {
+  border: transparent;
+}
+.forms form .form-btn {
+  width: 120px;
+  margin: 3% auto;
+}
+.forms form button {
+  background-color: #8268e1;
+  color: white;
+  padding: 10%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+.forms form button:hover {
+  box-shadow: 0 2px 8px #464646;
+}
+.forms .form-lastP--center {
+  text-align: center;
+  margin-top: 5%;
+}
+.forms .form-lastP--center a {
+  color: #7d7dff;
+}
+
+.description {
+  background-color: #dede00;
+  margin-bottom: -9px;
+  position: relative;
+}
+.description--text {
+  width: 600px;
+  margin: 5% auto;
+}
+.description--imgContainer {
+  margin-top: -30%;
+  margin-bottom: 50px;
+}
+.description img {
+  width: 650px;
+  margin-left: 7%;
+  margin-bottom: -20px;
+  position: absolute;
+  top: -23px;
+}
+
+/*# sourceMappingURL=userLoginStyle.css.map */

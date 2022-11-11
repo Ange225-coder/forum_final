@@ -1,0 +1,276 @@
+
+@mixin general-marge {
+    width: 78%;
+    margin: auto;
+}
+
+
+
+header {
+
+    .headerPar--block {
+        background-color: #09086E;
+        color: white;
+        padding: 1.7%;
+        margin-top: -0.7%;
+        margin-left: -0.6%;
+        margin-right: -0.5%;
+
+        p {
+            @include general-marge;
+            font-size: 17px;
+            font-family: Calibri, verdana, Comic Sans MS, sans-serif;
+
+        }
+    }
+
+
+    .header-flexbox {
+        @include general-marge;
+        font-family: calibri, sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            font-size: 1.9em;
+            letter-spacing: 1px;
+
+
+            a {
+                text-decoration: none;
+                margin-left: 7px;
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+
+
+    .header-flexbox__link {
+
+        a:first-child {
+            margin-right: 60px;
+        }
+
+
+        a {
+            text-decoration: none;
+            border: 1px solid #1d48c4;
+            padding: 10px 10px;
+            border-radius: 5px;
+            font-weight: bolder;
+            color: #1d48c4;
+
+            &:hover {
+                background-color: rgba(205, 190, 236, 0.76);
+            }
+        }
+    }
+}
+
+
+
+.section-information {
+
+    background-color: #5556B2;
+    color: whitesmoke;
+    padding-top: 10%;
+    padding-bottom: -1%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -8px;
+    margin-right: -8px;
+
+    h1 {
+        @include general-marge;
+        font-size: 3em;
+        margin-top: 5%;
+    }
+
+    p {
+        @include general-marge;
+    }
+
+    img {
+        width: 543px;
+        height: 300px;
+        margin-bottom: -4px;
+    }
+
+    .section-information__title {
+        margin-left: 7%;
+
+        h1 {
+            margin-bottom: 2%;
+        }
+    }
+}
+
+
+
+.section-dev {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+
+    &--imgCercle {
+
+        h2, p {
+            text-align: center;
+            font-family: Calibri, sans-serif;
+        }
+
+        h2 {
+            color: #023877;
+        }
+
+        p {
+            font-size: 1.1em;
+        }
+
+        img {
+            border-radius: 50%;
+            border: 1px solid grey;
+        }
+    }
+}
+
+
+
+.astuces-dev {
+
+    margin: 5% -8px;
+    background-color: rgba(128, 128, 128, 0.11);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    h1 {
+        background-color: #5556B2;
+        color: whitesmoke;
+        padding: 10px;
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+        font-family: Cambria, serif;
+    }
+
+    &--marge {
+        width: 600px;
+    }
+
+    video {
+        height: 300px;
+    }
+}
+
+
+
+.dev-help {
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+
+    &__img--round {
+
+        img {
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            border: 1px solid rgba(182, 182, 182, 0.66);
+        }
+    }
+
+    &--marge {
+        margin-right: 13%;
+        margin-left: -10%;
+
+        img {
+            vertical-align: middle;
+            margin-right: 1%;
+            height: 19px;
+            width: 19px;
+        }
+    }
+
+    h2 {
+        font-size: 1.9em;
+        font-family: Calibri, sans-serif;
+    }
+
+    p {
+        font-size: 1.1em;
+        font-family: Calibri, serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgba(142, 83, 196, 0.86);
+
+        &:hover {
+
+            background-color: rgba(205, 190, 236, 0.68);
+            border-radius: 5px;
+            padding: 6px 2% 1% 11px;
+        }
+    }
+
+    &--link {
+        margin-left: 3%;
+        margin-top: 3%;
+    }
+}
+
+
+
+footer {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.81);
+
+        &:hover {
+            color: #0c98ff;
+        }
+    }
+
+    .footer-title {
+        color: #023877;
+        font-size: 0.9em;
+    }
+
+    .marge--top {
+        margin-top: 20%;
+    }
+
+    .footer-link {
+
+        &--flex {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &--linkModify {
+            font-size: 14px;
+            font-family: calibri, sans-serif;
+            font-weight: bold;
+            border-left: 1px solid black;
+            padding-left: 100%;
+
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+}
